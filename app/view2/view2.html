@@ -1,0 +1,22 @@
+<form ng-submit="submitNewUser(user)">
+    <div class="row">
+        <label for="txtUserName">Username</label>
+        <input type="text" id="txtUserName" name="userName" ng-model="user.userName">
+    
+        <label for="txtCity">City</label>
+        <input type="text" id="txtCity" name="city" ng-model="user.city">
+    </div>
+    
+    <div class="row">
+        <label for="txtName">Name</label>
+        <input type="text" id="txtName" name="name" ng-model="user.name">
+    </div>
+    
+    <div class="row">
+        <label for="txtEmail">E-mail</label>
+        <input type="text" id="txtEmail" name="email" ng-model="user.email">
+    </div>
+
+    <label for="txtStatus">Request status: {{ (status || "Not Requested") }} </label>
+    <input type="submit" id="submit" value="Submit" />
+</form>

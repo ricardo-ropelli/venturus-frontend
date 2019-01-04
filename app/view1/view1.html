@@ -1,0 +1,31 @@
+<div class="table-responsive well no-padding white no-margin" ng-init="init()">
+    <h3 class="table-title"> Users - ({{users.length}}) </h3>
+    <table class="table table-full m-b-60" id="table-area-1" fsm-big-data="data of data take 30">
+        <thead>
+            <tr fsm-sticky-header scroll-body="'#table-area-1'" scroll-stop="64">
+                <th> Username </th>
+                <th> Name </th>
+                <th> E-mail </th>
+                <th> City </th>
+                <th> Ride in group </th>
+                <th> Day of the week </th>
+                <th> Posts </th>
+                <th> Albums </th>
+                <th> Photos </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{ user.userName }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.city }}</td>
+                <td>{{ user.rideInGroup }}</td>
+                <td>{{ user.dayOfTheWeek }}</td>
+                <td>{{ user.posts }}</td>
+                <td>{{ user.albums }}</td>
+                <td>{{ user.photos }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
